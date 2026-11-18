@@ -1,0 +1,174 @@
+* {
+    box-sizing: border-box;
+}
+
+body,
+html,
+main {
+    margin: 0px;
+    padding: 0px;
+
+    height: 100%;
+    user-select: none;
+}
+
+main {
+    overflow: hidden;
+    position: relative;
+
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-size: 20px;
+
+    > * {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+#map {
+    position: absolute;
+
+    .place-label > span {
+        font-size: 17px;
+        width: 200px;
+        text-align: center;
+        translate: -50% -50%;
+    }
+}
+
+#ui {
+    position: absolute;
+
+    pointer-events: none;
+    > * {
+        position: absolute;
+    }
+
+    .bottom {
+        bottom: 20px;
+    }
+    .top {
+        top: 20px;
+    }
+    .left {
+        left: 20px;
+    }
+    .right {
+        right: 20px;
+    }
+    .middle {
+        left: 50%;
+        translate: -50% 0px;
+    }
+
+    #status {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+
+        pointer-events: all;
+
+        > #layer-info {
+            width: 200px;
+            padding: 10px;
+
+            background-color: #ffffffa4;
+
+            display: flex;
+            flex-direction: column;
+
+            @media (max-width: 900px) {
+                gap: 20px;
+            }
+        }
+
+        > #time-spent {
+            font-weight: 900;
+            font-size: 80px;
+        }
+    }
+
+    #mission {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+
+        background-color: #ffffffa4;
+        pointer-events: all;
+        padding: 10px;
+    }
+
+    #controls {
+        display: flex;
+        flex-direction: column;
+        pointer-events: all;
+        gap: 5px;
+
+        @media (max-width: 900px) {
+            gap: 20px;
+        }
+
+        > button {
+            width: 60px;
+            height: 60px;
+
+            > img {
+                width: 90%;
+            }
+        }
+    }
+
+    #scale-bar,
+    #scale-bar-2 {
+        width: 40%;
+        background-color: red;
+        height: 50px;
+
+        color: white;
+        font-size: 30px;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        padding: 0px 10px;
+
+        > span {
+            text-align: right;
+            flex: 1 1 auto;
+        }
+    }
+
+    #scale-bar-2 {
+        width: 30%;
+        background-color: purple;
+    }
+
+    #scale-bar-better {
+        height: 60%;
+        width: 60px;
+        background-color: black;
+    }
+}
+
+.invert {
+    filter: invert(1);
+}
+
+.has-shadow {
+    position: relative;
+    display: inline-block;
+    color: #ffffff;
+    z-index: 0;
+
+    &::before {
+        content: attr(data-shadow);
+        position: absolute;
+        inset: 0;
+        z-index: -1;
+        -webkit-text-stroke: 4px #000000;
+    }
+}

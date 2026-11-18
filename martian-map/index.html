@@ -1,0 +1,59 @@
+<!doctype html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap" rel="stylesheet" />
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@2.0.0-beta.4/dist/leaflet.css" />
+        <script type="importmap">
+            { "imports": { "leaflet": "https://cdn.jsdelivr.net/npm/leaflet@2.0.0-beta.4/dist/leaflet.js" } }
+        </script>
+
+        <link rel="modulepreload" href="/assets/scripts/Timer.js" />
+        <link rel="modulepreload" href="/assets/scripts/Layer.js" />
+        <link rel="modulepreload" href="/assets/scripts/Map.js" />
+        <link rel="modulepreload" href="/assets/scripts/layers.js" />
+        <link rel="modulepreload" href="/assets/scripts/dt.js" />
+        <script type="module" src="/assets/scripts/main.js"></script>
+
+        <link rel="stylesheet" href="/assets/style.css" />
+
+        <title>Martian Map</title>
+    </head>
+    <body>
+        <main>
+            <div id="map"></div>
+
+            <div id="ui">
+                <div class="top left" id="status">
+                    <!-- casualties: unknown -->
+                    <div id="layer-info"></div>
+                    <div id="time-spent" class="has-shadow" data-shadow="00:00:00">00:00:00</div>
+                </div>
+                <div class="top right" id="mission">
+                    <span>Ox. Remaining: <span style="font-size: 32px">4 hours</span></span>
+                    <span>Tasks Remaining: (est) <span style="font-size: 32px">2 hours</span></span>
+                    <span>Local time: <span style="font-size: 32px" id="time">Loading...</span></span>
+                    <span>Route: <span style="font-size: 32px">T_001_Huygens</span></span>
+                </div>
+                <div class="bottom left" id="controls">
+                    <button id="zoom-in"><img src="/assets/zoom_in.svg" class="invert" /></button>
+                    <button id="zoom-out"><img src="/assets/zoom_out.svg" class="invert" /></button>
+                </div>
+                <div class="bottom middle" id="scale-bar">
+                    Local Temperature
+                    <span class="right">-65°C</span>
+                </div>
+                <div class="bottom middle" id="scale-bar-2" style="transform: translateY(-70px)">
+                    Altitude
+                    <span class="right">214m</span>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>
