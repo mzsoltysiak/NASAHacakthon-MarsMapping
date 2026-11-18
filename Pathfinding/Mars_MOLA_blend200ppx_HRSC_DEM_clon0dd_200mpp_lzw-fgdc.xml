@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?><metadata>
+  <idinfo>
+    <citation>
+      <citeinfo>
+        <origin>TBD</origin>
+        <pubdate>01011970</pubdate>
+        <title>TBD</title>
+      </citeinfo>
+    </citation>
+    <descript>
+      <abstract>TBD</abstract>
+      <purpose>TBD</purpose>
+    </descript>
+    <timeperd>
+      <timeinfo>
+        <sngdate>
+          <caldate>19700101</caldate>
+        </sngdate>
+      </timeinfo>
+      <current>In work</current>
+    </timeperd>
+    <status>
+      <progress>In work</progress>
+      <update>As needed</update>
+    </status>
+    <spdom>
+      <bounding>
+        <westbc>-180</westbc>
+        <eastbc>180</eastbc>
+        <northbc>90</northbc>
+        <southbc>-90</southbc>
+      </bounding>
+    </spdom>
+    <keywords>
+      <theme>
+        <themekt>TBD</themekt>
+        <themekey>TBD</themekey>
+      </theme>
+    </keywords>
+    <accconst>PRIVATE</accconst>
+    <useconst>TBD</useconst>
+  </idinfo>
+  <metainfo>
+    <metd>19700101</metd>
+    <metc>
+      <cntinfo>
+        <cntperp>
+          <cntper>MarsTrek Team</cntper>
+        </cntperp>
+        <cntaddr>
+          <addrtype>Postal</addrtype>
+          <city>Pasadena</city>
+          <state>CA</state>
+          <postal>91109</postal>
+        </cntaddr>
+        <cntvoice>TBD</cntvoice>
+      </cntinfo>
+    </metc>
+    <metstdn>TBD</metstdn>
+    <metstdv>TBD</metstdv>
+  </metainfo>
+</metadata>
